@@ -13,8 +13,10 @@ contract ZombieFactory {
     Zombie[] public zombies;
 
     function createZombie (string memory _name, uint _dna) public {
-     
+        zombies.push(Zombie(_name, _dna));   
   
     }
-
+    function _generateRandomDna(string memory _str) private view returns (uint) {
+        
+    }
 }
